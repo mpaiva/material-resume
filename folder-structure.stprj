@@ -1,0 +1,69 @@
+# folder structure file for Sublime Text plugin
+# Project Tree Templater
+
+# REQUIRED PLUGIN
+# https://github.com/julianxhokaxhiu/sublime-projecttreetemplater
+# type Cmd+Shift+P then Run projecttreetemplater
+
+# Tip: Use Python syntax highlight for better reading.
+
+
+# Starting files - Assuming project from scratch 
+
+	.gitignore
+	readme.md
+
+	# package.json
+	bower.json
+	gulpfile.js
+
+
+# Source Code Folder
+
+_src (
+	_src/assets (
+		images/
+		icons/
+		fonts/
+		)
+	_src/sass (
+		modules/
+		resume.scss
+		variables.scss
+		)
+	_src/js (
+		controllers/
+		directives/
+		services/
+		libraries/
+		app.js
+		)
+	_src/templates (
+		partials/
+		content/
+		mixins/
+		index.jade
+		)
+	)
+
+# Builds Folder used by the Task Manager (Gulp, Grunt or similar)
+# Devevolpment JS = browserify debug:true for source-mapping
+# Production JS = browserify debug:false > uglify (min+concat)
+# Production CSS = code uncss + uglify (min+concat) > 
+# *.html (converted from Jade) 
+
+builds (
+	builds/development(	
+		js/ 
+		css/
+		fonts/
+		images/
+		)
+	builds/production(	
+		js/ 
+		css/
+		fonts/
+		images/
+		)
+	)
+

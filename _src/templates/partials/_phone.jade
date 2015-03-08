@@ -1,0 +1,10 @@
+
+//- phone
+.col.s2.center-align.fact-icon
+	i.small.mdi-file-folder-shared
+.col.s10.facts-content-col
+	h5.side Contact
+	p
+		each item in locals.phone.numbers
+			span.facts-content-lg #{item.number} 
+			span.facts-content-sm #{item.title}

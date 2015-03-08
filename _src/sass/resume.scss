@@ -1,0 +1,363 @@
+// Side-Nav Height Variables
+
+$side-height: 2250px;
+
+// Color Variables
+
+$primary-color: #1A237E;
+$contrast-color: adjust-color($primary-color, $hue: 270deg, $saturation: 30, $lightness: 10);
+$primary-dark: darken($primary-color, 10);
+$dark-grey: #333;
+$light-grey: #888;
+$light-text: lighten($primary-color, 55);
+
+
+
+// Styles
+
+.light-text { color: $light-text; }
+.contrast-bg {background-color: $contrast-color !important;}
+.light-bg {background-color: $light-text !important;}
+.primary-color {
+	background: $primary-color;
+}
+
+.primary-dark {
+	background: $primary-dark;
+}
+
+.primary-nav {
+	background: $contrast-color;
+}
+
+.primary-nav:hover, .btn-large:hover {
+	background: invert($contrast-color);
+}
+
+.primary-nav i, .btn-large i {
+	color: $primary-color;
+	color: white;
+}
+
+.primary-nav:hover i, .btn-large:hover i {
+	color: contrast-color(invert($primary-color));
+	color: navy;
+}
+
+// Material Resume Styles 
+
+/* FIXING LEFT COLUMN 100% HEIGHT */
+	/* So 100% means 100% */
+	* { box-sizing: border-box;}
+
+	/* Make the body to be as tall as browser window */
+	html, body {height: 100%; font-size:100%;}
+
+	/* Add room for Footer */
+	#side-nav {height: $side-height; margin-bottom:0; padding:0; }
+
+	
+
+	/* Attach footer to left column */
+	main .row, footer.page-footer {margin:0; margin-bottom:0;}
+
+	footer.page-footer {background-color: $primary-dark;}
+
+	a {color: $primary-color;}
+ 
+
+/* PORTRAIT PHOTO CONTAINER */
+	/* Fix photo to the top of the page */
+	.portrait {margin-top:0;}
+
+	
+	/* Remove portrait card shadow from materialize */
+	.card.portrait, 
+	.main-nav-wrapper > .collapsible, 
+	#side-nav .card-panel,
+	#side-nav .card.portrait,
+	.facts-wrapper > .collapsible {
+	
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+		        box-shadow: none; 
+		border-radius: none;
+		background-color: transparent;
+
+	}
+
+	.portrait-wrapper {
+		position: absolute;
+		bottom: 7px;
+		left: 0;
+		padding: 20px;
+		padding-left:25%;
+		padding-bottom: 30px;
+		display: block;
+		width: 100%;
+		color: #fff;
+	  	background: -webkit-linear-gradient(to bottom, transparent, rgba(0,0,0,0.6));
+	  	background:    -moz-linear-gradient(to bottom, transparent, rgba(0,0,0,0.6));
+	  	background:     -ms-linear-gradient(to bottom, transparent, rgba(0,0,0,0.6));
+	  	background:      -o-linear-gradient(to bottom, transparent, rgba(0,0,0,0.6));
+	  	background:         linear-gradient(to bottom, transparent, rgba(0,0,0,0.6));
+
+
+}
+
+
+
+	/* FACTS AREA ON LEFT COLUMN */
+
+	h5.side {font-size:110%;}
+
+	p.side a {color: $light-text;}
+
+	.facts-wrapper {
+
+		margin-top: 0px;
+	}
+
+	.facts-wrapper:last-child {
+		position: relative;
+		margin-bottom: 50px;
+		bottom: 0;
+	}
+
+	.facts-wrapper .facts-content-col {
+		padding-right: 0;
+	}
+
+	.facts-wrapper p {
+		margin-top: -10px;
+		padding: 16px 0;
+		font-size: 80%;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		font-weight: 300;
+		line-height: 180%;
+		width: 100%;
+	} 
+	.facts-wrapper .facts-about {
+		padding-right: 30px;
+	}
+
+	.fact-icon { 
+		padding-right:0;
+
+	}
+
+
+
+	.col.s9.facts-content-col {
+	padding-left: 0;
+	}
+	.facts-wrapper span {
+		display:block;
+		line-height: 160%;
+	}
+
+	.facts-content-lg {
+		
+		font-size: 120%;
+		font-weight: 400;
+	}
+
+	.facts-content-sm {
+		
+		font-size: 90%;
+		padding-bottom: 10px;
+	}
+
+	.facts-skills-wrapper {
+		width: 85%;
+	}
+
+	.progress-label {
+		font-size: 80%
+	}
+
+	.progress-icon {
+	    height: 0px;
+	    display: block;
+	    position: relative;
+	    z-index: 1;
+	    font-size: 0.75rem;
+	}
+
+
+	.progress-fg, .progress-bg {
+		height: 2px;
+	}
+
+	/* MAIN PANEL AREA */
+
+
+	#main-panel .card-panel {
+		margin: 30px;
+		color: $dark-grey; 
+	}
+
+	#main-panel .card-panel p {
+		color: $light-grey;
+		font-weight: 300; 
+	}
+
+    #main-panel .card-panel h4 {
+		font-weight: 500;
+		font-size: 160%;
+    }
+    #main-panel .card-panel h5.role {
+		font-size: 100%;
+		color: lighten($primary-color, 40);
+		text-transform: uppercase;
+		margin: 2rem 0 0 0;
+    }
+    #main-panel .card-panel h6 {
+		font-size: 80%;
+     	color: $light-grey;
+    	text-transform: uppercase;
+    }
+    #main-panel .card-panel hr {
+    	border: 0px;
+    	height: 2px;
+    	background-color: #eee;
+    	margin: 30px -32px 30px 0;
+    }
+
+	.facts-interests p i {
+		color: $primary-color;
+		margin: 0 30px;
+	}
+
+
+
+    .contact-footer {margin-top: 20px;}
+    .contact-footer a {
+    	line-height: 400%;
+    	margin: 10px;
+    }
+    .contact-footer a:first-of-type {
+    	margin-right:20px;
+    }
+
+	blockquote {
+		margin: 20px 0;
+		padding-left: 0.75rem;
+		border-left: 3px solid lighten($primary-color, 50);
+	}
+	
+	.built-with a {margin: 0;}
+	.built-with a:first-of-type {
+	    	margin-right:0px;
+	    }	
+	.built-with span.title {font-size: 1em;}
+	.built-with img { width: 12%; margin:0;}
+
+	.job-highlight {font-size:90%;}
+
+	.timeline-graph { width: 100%; margin: 30px 0;}
+
+#forkongithub {
+	position:fixed;
+	display:block;
+	top:-30px;
+	right:0;
+	width:260px;
+	overflow:hidden;
+	height:260px;
+	z-index:9999;
+}
+#forkongithub a {
+	background:$primary-color;
+	color:#fff;
+	text-decoration:none;
+	text-align:center;
+	padding:5px 40px;
+	font-size:.825rem;
+	line-height:2rem;
+	position:relative;
+	transition:0.5s;
+	}
+#forkongithub a {
+	width:230px;
+	position:absolute;
+	top:60px;
+	right:-60px;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	box-shadow:4px 4px 10px rgba(0,0,0,0.8);
+	}
+
+#forkongithub a:hover {
+	background: $contrast-color;
+	color:#fff;
+}
+#forkongithub a::before,
+#forkongithub a::after {
+	content:"";
+	width:100%;
+	display:block;
+	position:absolute;
+	top:1px;
+	left:0;
+	height:1px;
+	background:#fff;
+	}
+#forkongithub a::after {
+	bottom:1px;
+	top:auto;
+	}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+	#side-nav {height: auto;}
+
+    div.contact-footer a {
+    	margin: 0 20px;
+    }
+    .contact-footer a:first-of-type {
+    	display: block;
+    	width: 100%;
+    	margin-left:0;
+    }
+    .built-with img { margin:0px; width: 24%;}
+
+
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+
+	#side-nav {height: ($side-height * 1.43);}
+	h4 {font-size: 1.5rem;}
+	h6 {font-size: 0.825rem; line-height: 0;}
+
+    .built-with img { width: 24%;}
+    .contact-footer a:first-of-type {
+    	display: block;
+    	width: 100%;
+    	margin-left:0;
+    }
+
+
+        #main-panel .card-panel h4 {
+          font-size: 3.5vw;
+          line-height: 4.5vw;
+        }
+        #main-panel .card-panel h5 {
+          font-size: 2.5vw;
+          line-height: 3.5vw;
+        }
+        #main-panel .card-panel h6 {
+          font-size: 2.0vw;
+          line-height: 2.5vw;
+        }
+      }

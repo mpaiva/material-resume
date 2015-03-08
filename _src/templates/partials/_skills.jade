@@ -1,0 +1,13 @@
+//- skills
+.col.s2.right-align.fact-icon
+	h5: i( class = [ 'fa', '#{locals.skill.icon}', 'fa-md' ])
+.col.s10.facts-content-col
+	h5.side #{locals.skill.label}
+	br
+	.facts-skills-wrapper
+		each item in locals.skill.items
+			span.progress-label #{item.label}
+			i.progress-icon.mdi-image-lens(style='left: calc(' + '#{item.level}' + '% - 2px);')
+			.progress-bg.progress.primary-dark
+				.progress-fg.determinate.light-bg(style='width: ' + '#{item.level}' + '%')
+		br

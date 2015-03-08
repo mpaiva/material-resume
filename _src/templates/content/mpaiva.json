@@ -1,0 +1,156 @@
+{
+  "frontmatter": {
+    "project": "Material Resume - Marcelo Paiva",
+    "version": "0.0.1",
+    "language": "en",
+    "description": "Professional Resume using Google's Material Design visual language. Built using modern web development workflow tools, such as Bower for package mamagement, Gulp and plugins for web development task management, Jade as HTML template language and Materialize SASS as CSS scaffolding."
+  },
+  "name": "Marcelo Paiva",
+  "title": "User Experience Director",
+  "photo": "images/mpaiva2.jpg",
+  "biography": {
+    "label": "Summary",
+    "icon": "mdi-social-person-outline",
+    "p1": "More than 15 years building productive design teams,  solving complex systems challenges and developing thoughtful expertise to foster modern design practices in Agile development environments for mobile and web applications. ",
+    "p2": "Extensive leadership with designers and front-end developers, while enabling a creative environment of success for colleagues and team members."
+  },
+  "contact": {
+    "label": "Contact",
+    "icon": "mdi-communication-call",
+    "items": [
+      {
+        "title": "phone",
+        "icon": "fa-phone-square",
+        "value": "617-480-2837",
+        "href": "tel:6174802837",
+        "type": ""
+      },
+      {
+        "title": "email",
+        "icon": "fa-envelope-square",
+        "value": "mpaiva@gmail.com",
+        "href": "mailto:mpaiva@gmail.com",
+        "type": ""
+      },
+      {
+        "title": "twitter",
+        "icon": "fa-twitter-square",
+        "value": "@muqueca",
+        "href": "https://twitter.com/muqueca",
+        "type": ""
+      },
+      {
+        "title": "linkedin",
+        "icon": "fa-linkedin-square",
+        "value": "linkedin.com/in/mtpaiva",
+        "href": "http://linkedin.com/in/mtpaiva",
+        "type": ""
+      },
+      {
+        "title": "website",
+        "icon": "fa-external-link-square",
+        "value": "marcelopaiva.com",
+        "href": "http://marcelopaiva.com",
+        "type": ""
+      }
+    ]
+  },
+  "skill": {
+    "label": "Proficiency",
+    "icon": "fa-sliders",
+    "items": [
+      {
+        "icon": "fa-icon-name",
+        "label": "Sketch App",
+        "level": "90"
+      },
+      {
+        "icon": "fa-icon-name",
+        "label": "Adobe Photoshop",
+        "level": "75"
+      },
+      {
+        "icon": "fa-icon-name",
+        "label": "Adobe Illustrator",
+        "level": "85"
+      },
+      {
+        "icon": "fa-icon-name",
+        "label": "HTML & CSS",
+        "level": "95"
+      },
+      {
+        "icon": "fa-icon-name",
+        "label": "Javascript",
+        "level": "75"
+      },
+      {
+        "icon": "fa-icon-name",
+        "label": "Jade - Template Language",
+        "level": "95"
+      },
+      {
+        "icon": "fa-icon-name",
+        "label": "AngularJs - UI implementation",
+        "level": "85"
+      },
+      {
+        "icon": "fa-icon-name",
+        "label": "Gulp",
+        "level": "85"
+      }
+    ]
+  },
+  "job": {
+    "label": "Key Skills Assessment",
+    "highlights": [
+      {
+        "role": "As Leader",
+        "items": [
+          {
+            "description": "Directed team of interaction and visual designers to create responsive solution to monitor human violations in real-time, minimizing bank’s regulatory risk to zero",
+            "project": "Barclays Capital client with Sapient"
+          },
+          {
+            "description": "Streamlined UX budget from $4.4M/yr to 1.75M/yr (-60.3%) while establishing a lean cross-functional design and front-end development capable of delivering effectively in an Agile environment",
+            "project": "Thomson Reuters"
+          },
+          {
+            "description": "Lead product design strategy effort for an Investment Management segment, collaborating with over 10 stakeholders to brainstorm and prioritize features, define navigation patterns, and propose user interface design guidelines and framework",
+            "project": "Thomson Financial"
+          }
+        ]
+      },
+      {
+        "role": "As Multidisciplinary Experience Designer",
+        "items": [
+          {
+            "description": "Improved website (lincolncenter.org) user interaction and usability, allowing better customer communication and marketing in online and offline channels, and increase online ticket sales, subscriptions, and other revenue sources",
+            "project": "Lincoln Center for the Performing Arts, as Consultant"
+          },
+          {
+            "description": "Led team to developed interaction strategies, interaction design, prototyping, and visual design for a multidimensional site - Geography, Language and Partner",
+            "project": "Net2Phone, Inc"
+          },
+          {
+            "description": "Architected, designed, and developed a front-end solution delivering thousands of co-branded web- sites and on-demand factsheet PDFs ",
+            "project": "TIAA-CREF client with NewRiver, Inc"
+          }
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "label": "Professional Experience",
+    "icon": "",
+    "p1": "User experience designer capable of establishing a creative environment for team members to show their talents, complement each other, and strive to achieve the right design solution with measurable results and accountability. A thorough understanding of contemporary methodologies, and a confident influence for small to medium sized teams to thrive in a fast paced, challenging environment while creating thoughtful, innovative good business solutions for the end user.",
+    "infographPhone1": "images/graph-timeline-skills_@2x.png",
+    "infographPhone2": "images/graph-timeline-companies_@2x.png",
+    "infographHi": "images/graph-timeline_@2x.png"
+  },
+  "education": {
+    "label": "Education",
+    "icon": "mdi-social-school",
+    "description": "Electrical Designer, State Center of Technology Ferreira Viana, Rio de Janeiro , Brazil"
+  }
+}

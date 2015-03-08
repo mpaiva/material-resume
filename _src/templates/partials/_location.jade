@@ -1,0 +1,12 @@
+//- location
+.col.s3.center-align.fact-icon
+	//- font awesome icon = "fa fa-camera-retro fa-lg"
+	//- i( class = [ 'fa', '#{locals.address.icon}', 'fa-3x' ])	
+	
+	//- materialize icon = "small mdi-action-perm-identity"
+	i( class = [ 'small', '#{locals.address.icon}' ])
+.col.s9.facts-content-col
+	p
+		span.facts-content-lg
+			| #{locals.address.city}, #{locals.address.state}
+		span.facts-content-sm #{locals.address.country}

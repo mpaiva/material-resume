@@ -1,0 +1,10 @@
+//- work
+.col.s12.facts-content-col.job
+	h4 #{locals.job.label}
+	each highlight in locals.job.highlights
+		h5.role #{highlight.role}
+		p
+			if highlight.items
+				each item in highlight.items
+					p #{item.description} &nbsp;
+						span: i (#{item.project}).

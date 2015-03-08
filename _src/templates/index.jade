@@ -1,0 +1,93 @@
+extends partials/_base-template.jade
+
+append config
+	- var language     = "en"
+	- var bootstrap    = false
+	- var fontAwesome  = true
+	- var materialize  = true
+	- var jQuery       = true
+	- var customStyles = true
+
+
+	- var metaDescription = "Description about the page."
+
+//- head blocks
+
+block append metatags
+	meta( name='description', content='')
+
+
+//- mixins
+//- I know I will have a mix for each repeting sesction of my resume
+
+
+mixin showNode(node)
+	each item, key in node
+		p #{key} : #{item}
+
+mixin fa(icon, size)
+	//- sizes: lg, 2x, 3x, 4x, 5x
+	i.fa(class="#{icon} fa-#{size} ") 
+
+
+
+//- body blocks
+
+append config
+	- var bodyClasses = ['blue-grey', 'lighten-5']
+
+
+	
+
+
+
+
+//- content here
+	block content
+
+		//- phone numbers
+		+fa( locals.phone.icon , "2x")
+		h3 #{locals.phone.label}
+
+		each item in locals.phone.numbers
+			p #{item.title} : #{item.number} 
+		
+		//- emails
+		h3 #{locals.email.label}
+		p  #{locals.email.icon} 
+
+		each item in locals.email.addresses
+			p #{item.title} : #{item.email}
+			
+		//- mailing address
+		h3 #{locals.address.label}
+		p ( #{locals.address.icon} )
+		
+		+showNode(locals.address)
+
+		//-- skills
+		h3 #{locals.skill.label}
+		p ( #{locals.skill.icon} )
+		each item in locals.skill.skills
+			p #{item.label} : #{item.level}
+
+		//-- jobs
+		h3 #{locals.job.label}
+		p ( #{locals.job.icon} )
+		each item in locals.job.companies
+			+showNode(item)
+			if item.highlights
+				each project in item.highlights
+					blockquote 
+						+showNode(project)
+
+		//-- education
+		h3 #{locals.education.label}
+		p ( #{locals.education.icon} )
+		each item in locals.education.schools
+			+showNode(item)
+
+
+
+
+

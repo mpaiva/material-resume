@@ -1,0 +1,8 @@
+//- email
+.col.s2.center-align.fact-icon
+	i.small.mdi-communication-email
+.col.s10.facts-content-col
+	p
+		each item in locals.email.addresses
+			span.facts-content-lg #{item.email} 
+			span.facts-content-sm #{item.title}

@@ -1,0 +1,10 @@
+//- phone
+.col.s2.right-align.fact-icon
+	h5: i( class = [ 'fa', '#{locals.contact.icon}', 'fa-md' ])
+.col.s10.facts-content-col
+	h5.side #{locals.contact.label}
+	p.side
+		each contact in locals.contact.items
+			i( class = [ 'tiny', 'fa', '#{contact.icon}' ]) &nbsp;&nbsp;  
+			a( href= '#{contact.href}', target= '_blank') #{contact.value}
+			br

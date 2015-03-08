@@ -1,0 +1,38 @@
+//- built-with
+
+.col.s12.facts-content-col
+	h4 About this page
+	p 
+		| This page was developed using a modern web development workflow approach that leverages 
+		a.tooltipped( 
+			data-position='top', 
+			data-delay='50', 
+			data-tooltip='Don\'t Repeat Yourself', 
+			href='http://en.wikipedia.org/wiki/Don%27t_repeat_yourself', 
+			target='_blank'
+			) DRY 
+		|  practices, development task management and 
+		a.tooltipped( 
+			data-position='top', 
+			data-delay='50', 
+			data-tooltip='Separation of Concerns', 
+			href='http://en.wikipedia.org/wiki/Separation_of_concerns#HTML.2C_CSS.2C_JavaScript', 
+			target='_blank'
+			) SoC 
+		| principle to completely decouple the organization, style, interactive and content layers.
+	p
+		| The tools below are part of this workflow. 
+		span.hide-on-large-only Tap <!-- Show on mobile -->
+		span.hide-on-med-and-down Click <!-- Show on desktop -->
+		| to learn more.
+
+.col.s12.facts-content-col
+	.center-align.built-with
+		a(href='http://gulpjs.com/', target='_blank', title='Gulp Js - Task Manager')
+			img( src="images/built_with_gulp.png")
+		a(href='http://jade-lang.com//', target='_blank', title='Jade - Template language')
+			img( src="images/built_with_jade.png")
+		a(href='http://materializecss.com/', target='_blank', title='Materialize CSS/SASS Scaffolding')
+			img( src="images/built_with_materialize.png")
+		a(href='http://json.org/', target='_blank', title='JSON - As content data layer')
+			img( src="images/built_with_json.png")
