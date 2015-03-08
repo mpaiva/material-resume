@@ -139,6 +139,13 @@ gulp.task('watch', function() {
  	gulp.watch( '_src/assets/images/**/!(_)*.*', ['images']);
 	});
 
+	// shell - Send terminal commands here
+	gulp.task('shell', shell.task([
+	  'git status',
+	  'git add .',
+	  'git commit -m \'Gulp detected changes\''
+	]));
+
 // Default tasks
 gulp.task('default', ['shell', 'bowerFiles', 'sass', 'jade', 'images', 'watch']);
 
