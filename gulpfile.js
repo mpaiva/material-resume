@@ -143,7 +143,8 @@ gulp.task('watch', function() {
 	gulp.task('git', shell.task([
 	  'git status',
 	  'git add .',
-	  'git commit -m \'Gulp detected changes\''
+	  'git commit -m \'Gulp detected changes\'',
+	  'git push origin'
 	]));
 
 // Default tasks
