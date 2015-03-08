@@ -139,7 +139,7 @@ gulp.task('watch', function() {
  	gulp.watch( '_src/assets/images/**/!(_)*.*', ['images']);
 	});
 
-	// Git Automation - Send terminal commands here
+	// Git Automation 
 	gulp.task('git', shell.task([
 	  'git status',
 	  'git add .',
