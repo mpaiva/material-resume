@@ -147,7 +147,7 @@ gulp.task('watch', function() {
 	]));
 
 // Default tasks
-gulp.task('default', ['shell', 'bowerFiles', 'sass', 'jade', 'images', 'git', 'watch']);
+gulp.task('default', ['shell', 'bowerFiles', 'sass', 'jade', 'images', 'watch']);
 
 // end
 
