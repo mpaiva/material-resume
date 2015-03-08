@@ -140,14 +140,14 @@ gulp.task('watch', function() {
 	});
 
 	// shell - Send terminal commands here
-	gulp.task('shell', shell.task([
+	gulp.task('git', shell.task([
 	  'git status',
 	  'git add .',
 	  'git commit -m \'Gulp detected changes\''
 	]));
 
 // Default tasks
-gulp.task('default', ['shell', 'bowerFiles', 'sass', 'jade', 'images', 'watch']);
+gulp.task('default', ['shell', 'bowerFiles', 'sass', 'jade', 'images', 'git', 'watch']);
 
 // end
 
