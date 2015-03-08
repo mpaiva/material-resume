@@ -3,11 +3,15 @@ var gulp       = require('gulp');
 var shell      = require('gulp-shell');
 var jade       = require('gulp-jade');
 var sass       = require('gulp-sass');
+var concat     = require('gulp-concat');
+var minifyCSS  = require('gulp-minify-css');
+var rename     = require('gulp-rename');
 var gulpif     = require('gulp-if');
+var uglify     = require('gulp-uglify');
 var notify     = require('gulp-notify');
 var plumber    = require('gulp-plumber');
 var connect    = require('gulp-connect');
-var imagemin     = require('gulp-imagemin');
+var imagemin   = require('gulp-imagemin');
 var pngquant   = require('imagemin-pngquant');
 var livereload = require('gulp-livereload');
 var bowerFiles = require('main-bower-files');
@@ -45,7 +49,8 @@ var jQueryDir      = 'bower_components/jquery/dist/'
 	      		jade( { pretty: true, 
 	      				locals: resumeData } ),
 	      		// else
-	      		jade()
+	      		jade( { pretty: false, 
+	      				locals: resumeData } )
 	      		))
 	      .pipe(gulp.dest(outputDir + env))
 	      .pipe(notify({
@@ -83,7 +88,9 @@ var jQueryDir      = 'bower_components/jquery/dist/'
 	      		sass({ sourceComments: 'map' }),
 	      		// else
 	      		sass()
-	      		))
+	      	)
+	      )
+	      //.pipe(gulpif(env === 'production', minifyCSS()))
 	      .pipe(gulp.dest(outputDir + env + '/css/'))
 	      .pipe(notify({
 			      message: "<%= file.relative %> created successfuly",
@@ -116,11 +123,11 @@ var jQueryDir      = 'bower_components/jquery/dist/'
 
 	// gulp js
 	gulp.task('js', function() {
-	    return gulp.src('_src/js/aap.js')
+	    return gulp.src('_src/js/*.js')
 	      .pipe(plumber())
 	      .pipe(browserify({ debug: end === 'development'}))
 	      .pipe(gulpif(env === 'production', uglify()))
-	      .pipe(gulp.dest('builds/development/js'));
+	      .pipe(gulp.dest(outputDir + env + '/js'));
 	});
 
 // Watch task
