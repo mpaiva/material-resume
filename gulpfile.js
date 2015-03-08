@@ -90,7 +90,7 @@ var jQueryDir      = 'bower_components/jquery/dist/'
 	      		sass()
 	      	)
 	      )
-	      //.pipe(gulpif(env === 'production', minifyCSS()))
+	      // .pipe(gulpif(env === 'production', minifyCSS()))
 	      .pipe(gulp.dest(outputDir + env + '/css/'))
 	      .pipe(notify({
 			      message: "<%= file.relative %> created successfuly",
