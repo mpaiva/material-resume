@@ -19,7 +19,9 @@ var bowerFiles = require('main-bower-files');
 // JSON containing the content for jade templates
 var resumeData = require('./_src/templates/content/mpaiva.json')
 
-// get nodejs environment mode
+// get nodejs environment mod
+// command to set environment > NODE_ENV=production gulp
+
 var env = process.env.NODE_ENV || 'development';
 
 // directories
@@ -120,6 +122,19 @@ var jQueryDir      = 'bower_components/jquery/dist/'
 	      .pipe(livereload())
 	});
 
+	// download folder
+	gulp.task('downloads', function() {
+	    return gulp.src( '_src/assets/downloads/**/!(_)*.*' )
+	      .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+	      .pipe(gulp.dest(outputDir + env + '/downloads/'))
+	      .pipe(notify({
+			      message: "<%= file.relative %> created successfuly",
+			      templateOptions: {
+			        date: new Date()
+			      }
+			  }))
+	      .pipe(livereload())
+	});
 
 	// gulp js
 	gulp.task('js', function() {
@@ -137,6 +152,7 @@ gulp.task('watch', function() {
  	gulp.watch( '_src/sass/**/*.scss', ['sass']);
  	gulp.watch( 'bower_components/**/*.*', ['bowerFiles']);
  	gulp.watch( '_src/assets/images/**/!(_)*.*', ['images']);
+ 	gulp.watch( '_src/assets/downloads/**/!(_)*.*', ['downloads']);
 	});
 
 	// Git Automation - 
@@ -147,8 +163,14 @@ gulp.task('watch', function() {
 	  'git push origin'
 	]));
 
+	// Build Production
+
+	gulp.task('production', shell.task([
+	  'NODE_ENV=production gulp'
+	]));
+
 // Default tasks
-gulp.task('default', ['shell', 'bowerFiles', 'sass', 'jade', 'images', 'watch']);
+gulp.task('default', ['shell', 'bowerFiles', 'sass', 'jade', 'images', 'downloads', 'watch']);
 
 // end
 

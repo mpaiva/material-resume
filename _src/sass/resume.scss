@@ -31,7 +31,8 @@ $light-text: lighten($primary-color, 55);
 }
 
 .primary-nav:hover, .btn-large:hover {
-	background: invert($contrast-color);
+	background: $contrast-color;
+	color: white;
 }
 
 .primary-nav i, .btn-large i {
@@ -41,7 +42,14 @@ $light-text: lighten($primary-color, 55);
 
 .primary-nav:hover i, .btn-large:hover i {
 	color: contrast-color(invert($primary-color));
-	color: navy;
+}
+
+.floating-download {
+	background-color: red;
+}
+
+.floating-download:hover {
+	background-color: $contrast-color;
 }
 
 // Material Resume Styles 
@@ -131,7 +139,7 @@ $light-text: lighten($primary-color, 55);
 	.facts-wrapper p {
 		margin-top: -10px;
 		padding: 16px 0;
-		font-size: 80%;
+		font-size: 100%;
 		border-bottom: 1px solid rgba(0,0,0,0.1);
 		font-weight: 300;
 		line-height: 180%;
@@ -331,6 +339,11 @@ $light-text: lighten($primary-color, 55);
     }
     .built-with img { margin:0px; width: 24%;}
 
+   #main-panel .card-panel {
+	  margin: 10px 0px 30px;
+	  color: #333;
+	} 
+
 
 }
 
@@ -346,18 +359,16 @@ $light-text: lighten($primary-color, 55);
     	width: 100%;
     	margin-left:0;
     }
-
-
-        #main-panel .card-panel h4 {
-          font-size: 3.5vw;
-          line-height: 4.5vw;
-        }
-        #main-panel .card-panel h5 {
-          font-size: 2.5vw;
-          line-height: 3.5vw;
-        }
-        #main-panel .card-panel h6 {
-          font-size: 2.0vw;
-          line-height: 2.5vw;
-        }
-      }
+    #main-panel .card-panel h4 {
+      font-size: 3.5vw;
+      line-height: 4.5vw;
+    }
+    #main-panel .card-panel h5 {
+      font-size: 2.5vw;
+      line-height: 3.5vw;
+    }
+    #main-panel .card-panel h6 {
+      font-size: 2.0vw;
+      line-height: 2.5vw;
+    }
+  }

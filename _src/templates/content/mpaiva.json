@@ -49,8 +49,8 @@
       {
         "title": "website",
         "icon": "fa-external-link-square",
-        "value": "marcelopaiva.com",
-        "href": "http://marcelopaiva.com",
+        "value": "paiva.cc",
+        "href": "http://paiva.cc",
         "type": ""
       }
     ]
@@ -61,43 +61,38 @@
     "items": [
       {
         "icon": "fa-icon-name",
-        "label": "Sketch App",
+        "label": "Sketch App / Photoshop",
         "level": "90"
       },
       {
         "icon": "fa-icon-name",
-        "label": "Adobe Photoshop",
-        "level": "75"
-      },
-      {
-        "icon": "fa-icon-name",
-        "label": "Adobe Illustrator",
-        "level": "85"
-      },
-      {
-        "icon": "fa-icon-name",
-        "label": "HTML & CSS",
+        "label": "Adobe Illustrator /inDesign",
         "level": "95"
       },
       {
         "icon": "fa-icon-name",
-        "label": "Javascript",
-        "level": "75"
+        "label": "Axure / Ominigraffle",
+        "level": "90"
       },
       {
         "icon": "fa-icon-name",
-        "label": "Jade - Template Language",
+        "label": "Marvel / Flinto / Pixate / Webflow",
+        "level": "80"
+      },
+      {
+        "icon": "fa-icon-name",
+        "label": "HTML / Jade",
         "level": "95"
       },
       {
         "icon": "fa-icon-name",
-        "label": "AngularJs - UI implementation",
-        "level": "85"
+        "label": "CSS / LESS / SASS / Booststrap",
+        "level": "95"
       },
       {
         "icon": "fa-icon-name",
-        "label": "Gulp",
-        "level": "85"
+        "label": "AngularJs / NPM / Gulp",
+        "level": "80"
       }
     ]
   },
