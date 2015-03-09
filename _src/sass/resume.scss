@@ -11,9 +11,12 @@ $dark-grey: #333;
 $light-grey: #888;
 $light-text: lighten($primary-color, 55);
 
-
-
 // Styles
+
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
 
 .light-text { color: $light-text; }
 .contrast-bg {background-color: $contrast-color !important;}
