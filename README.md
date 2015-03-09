@@ -20,7 +20,7 @@ You also be able to take the first impressions to new heights.
 ## Designed in Sketch App
 The sketch template containing the design for this resume, along with Material Design visual elements, symbols, icons - and much more, can be found in the [design folder](https://github.com/mpaiva/material-resume/tree/master/_src/design).  
 
-![_showcase](https://cloud.githubusercontent.com/assets/781670/6544935/fdec0634-c534-11e4-9aef-a0a1e298038f.png xx)
+![_showcase](https://cloud.githubusercontent.com/assets/781670/6544935/fdec0634-c534-11e4-9aef-a0a1e298038f.png)
 
 ---
 
