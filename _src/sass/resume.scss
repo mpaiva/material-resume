@@ -319,7 +319,17 @@ $light-text: lighten($primary-color, 55);
 	top:auto;
 	}
 
-
+.floating-badge {
+	position: absolute; 
+	margin-left:-50px; 
+	top:3px; 
+	right:50px; 
+	color:white; 
+	font-size:.625em; 
+	background: rgba(0,0,0,.75);
+	padding: 0 10px 3px 3px;
+	line-height: 1em;
+}
 
 
 

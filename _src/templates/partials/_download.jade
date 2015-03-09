@@ -2,9 +2,9 @@
 .fixed-action-btn( style='bottom:45px; right:24px;')
 	a.btn-floating.btn-large(
 		class= 'floating-download',
-		): i.mdi-content-add
+		): i.mdi-file-file-download
 	ul
-		li
+		li			
 			a.btn-floating.tooltipped(
 				class= 'floating-download',
 				data-position='left', 
@@ -13,6 +13,10 @@
 				href='downloads/mpaiva-portfolio-bloomberg.pdf', 
 				target='_blank'
 				): i.mdi-image-photo-camera
+				span.floating-badge.right-align(
+					class='hide-on-large-only',
+					style='width: 210px'
+					) Bloomberg Concept PDF
 		li
 			a.btn-floating.tooltipped(
 				class= 'floating-download',
@@ -22,6 +26,10 @@
 				href='downloads/mpaiva-portfolio-mobile.pdf', 
 				target='_blank'
 				): i.mdi-hardware-phone-iphone
+				span.floating-badge.right-align(
+					class='hide-on-large-only',
+					style='width: 190px'
+					) Portfolio - Mobile PDF
 		li
 			a.btn-floating.tooltipped(
 				class= 'floating-download',
@@ -31,3 +39,7 @@
 				href='downloads/mpaiva-resume.pdf', 
 				target='_blank'
 				): i.mdi-action-account-circle
+				span.floating-badge.right-align(
+					class='hide-on-large-only',
+					style='width: 130px'
+					) Resume PDF
