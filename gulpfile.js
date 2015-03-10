@@ -7,7 +7,6 @@ var concat     = require('gulp-concat');
 var minifyCSS  = require('gulp-minify-css');
 var rename     = require('gulp-rename');
 var gulpif     = require('gulp-if');
-var uglify     = require('gulp-uglify');
 var notify     = require('gulp-notify');
 var plumber    = require('gulp-plumber');
 var connect    = require('gulp-connect');
@@ -15,6 +14,7 @@ var imagemin   = require('gulp-imagemin');
 var pngquant   = require('imagemin-pngquant');
 var livereload = require('gulp-livereload');
 var bowerFiles = require('main-bower-files');
+
 
 // JSON containing the content for jade templates
 var resumeData = require('./_src/templates/content/mpaiva.json')
@@ -136,20 +136,12 @@ var jQueryDir      = 'bower_components/jquery/dist/'
 	      .pipe(livereload())
 	});
 
-	// gulp js
-	gulp.task('js', function() {
-	    return gulp.src('_src/js/*.js')
-	      .pipe(plumber())
-	      .pipe(browserify({ debug: end === 'development'}))
-	      .pipe(gulpif(env === 'production', uglify()))
-	      .pipe(gulp.dest(outputDir + env + '/js'));
-	});
 
 // Watch task
 gulp.task('watch', function() {
 	var server = livereload();
- 	gulp.watch( '_src/templates/**/*.jade', ['jade']);
- 	gulp.watch( '_src/sass/**/*.scss', ['sass']);
+ 	gulp.watch( '_src/templates/**/!(_)*.jade', ['jade']);
+ 	gulp.watch( '_src/sass/**/!(_)*.scss', ['sass']);
  	gulp.watch( 'bower_components/**/*.*', ['bowerFiles']);
  	gulp.watch( '_src/assets/images/**/!(_)*.*', ['images']);
  	gulp.watch( '_src/assets/downloads/**/!(_)*.*', ['downloads']);
