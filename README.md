@@ -46,7 +46,7 @@ if you are hanging around GitHub, you're already familiar with Git. If you are n
 ## 2. Clone your fork
 Assuming you already have Git installed in your machine, go into your project folder and __clone your fork repository locally__ by adding the following command:
 
-```
+```ruby
 $ git clone https://github.com/[YOUR_USERNAME]/material-resume.git
 ```
 Go into your new Git folder:
@@ -117,7 +117,7 @@ This file is serviced via the [gulpfile.js](https://github.com/mpaiva/material-r
 
 A variable containing with path to data source:
 
-```
+```javascript
 19 // JSON containing the content for jade templates
 20 var resumeData = require('./_src/templates/content/mpaiva.json')
 ```
