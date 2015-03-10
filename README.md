@@ -142,7 +142,7 @@ Then, you can bind any data node from the JSON file with `#{locals.name}`. See e
 
 JSON node: 
 
-```
+```json
 {
   "name": "Marcelo Paiva",
   "title": "User Experience Director",
