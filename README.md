@@ -13,7 +13,9 @@ Built using modern web development workflow tools, such as:
 * Materialize SASS as CSS scaffolding
 * And JSON for content layer
 
-You also be able to take the first impressions to new heights.
+With these simple instruction, you'll be able to impress any hiring manager and learn some neat tricks about the latest design and front-end development tools.
+
+
 
 ---
 
