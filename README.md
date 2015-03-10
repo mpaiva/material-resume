@@ -46,7 +46,7 @@ if you are hanging around GitHub, you're already familiar with Git. If you are n
 ## 2. Clone your fork
 Assuming you already have Git installed in your machine, go into your project folder and __clone your fork repository locally__ by adding the following command:
 
-```ruby
+```shell
 $ git clone https://github.com/[YOUR_USERNAME]/material-resume.git
 ```
 Go into your new Git folder:
