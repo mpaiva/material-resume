@@ -1,6 +1,5 @@
 # Material Résumé
 
----
 
 ## Introduction
 Professional Résumés and Curriculum Vitae formalities follow conventions from as [early as the 1500's](http://mashable.com/2011/09/04/history-of-the-resume/ "History of the Resume"). Material Resume is a fresh take on how this old formality can be improved to meet the current recipient's expectations using [Google's Material Design](http://www.google.com/design/spec/material-design/introduction.html) visual language. 
