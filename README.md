@@ -123,7 +123,7 @@ A variable containing with path to data source:
 ```
 is passed to the [gulp-jade plugin](https://www.npmjs.com/package/gulp-jade) via the __locals__ option. See example below:
 
-```
+```javascript
 var jade = require('gulp-jade');
  
 gulp.task('templates', function() {
