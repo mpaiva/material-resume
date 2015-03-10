@@ -102,7 +102,7 @@ This simple command you will run the default task in the [gulpfile.js](https://g
 	![image](https://cloud.githubusercontent.com/assets/781670/6565922/77094562-c68a-11e4-9c73-dcdf53beb475.png)
 
 # HTML and Jade Templates
-Jade ([http://jade-lang.com]()) is a very cool HTML template language that brings a number of features to allow front-end developers to leverage [DRY practices](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself) with variables, data-binding, mixins, includes, etc.
+Jade (http://jade-lang.com) is a very cool HTML template language that brings a number of features to allow front-end developers to leverage [DRY practices](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself) with variables, data-binding, mixins, includes, etc.
 
 To learn more about Jade, [check out this Tuts+ video](https://webdesign.tutsplus.com/courses/top-speed-html-development-with-jade) by Kezz Bracey [@KezzBracey](https://twitter.com/KezzBracey)
 
