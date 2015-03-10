@@ -1,5 +1,5 @@
 # Included in the Sketch File
-In the ___.sketch__ file you will find all design resources needed to get your new UI looking just the way you want.
+In the ___.sketch___ file you will find all design resources needed to get your new UI looking just the way you want.
 
 ## Material Resume Design
 ![image](https://cloud.githubusercontent.com/assets/781670/6569490/69def31e-c6c1-11e4-9fef-6f464f571449.png)
