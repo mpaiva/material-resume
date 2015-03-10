@@ -8,6 +8,6 @@
 		each item in locals.skill.items
 			span.progress-label #{item.label}
 			i.progress-icon.mdi-image-lens(style='left: calc(' + '#{item.level}' + '% - 2px);')
-			.progress-bg.progress.primary-dark
+			.progress-bg.progress
 				.progress-fg.determinate.light-bg(style='width: ' + '#{item.level}' + '%')
 		br

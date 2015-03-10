@@ -140,8 +140,8 @@ var jQueryDir      = 'bower_components/jquery/dist/'
 // Watch task
 gulp.task('watch', function() {
 	var server = livereload();
- 	gulp.watch( '_src/templates/**/!(_)*.jade', ['jade']);
- 	gulp.watch( '_src/sass/**/!(_)*.scss', ['sass']);
+ 	gulp.watch( '_src/templates/**/*.jade', ['jade']);
+ 	gulp.watch( '_src/sass/**/*.scss', ['sass']);
  	gulp.watch( 'bower_components/**/*.*', ['bowerFiles']);
  	gulp.watch( '_src/assets/images/**/!(_)*.*', ['images']);
  	gulp.watch( '_src/assets/downloads/**/!(_)*.*', ['downloads']);

@@ -6,5 +6,6 @@
 		p
 			if highlight.items
 				each item in highlight.items
-					p #{item.description} &nbsp;
-						span: i (#{item.project}).
+					p
+						span.work-company #{item.project} 
+						| &mdash;	#{item.description}.

@@ -6,7 +6,7 @@ $side-height: 2250px;
 
 $primary-color: #1A237E;
 $contrast-color: adjust-color($primary-color, $hue: 270deg, $saturation: 30, $lightness: 10);
-$primary-dark: darken($primary-color, 10);
+$primary-dark: darken($primary-color, 50);
 $dark-grey: #333;
 $light-grey: #888;
 $light-text: lighten($primary-color, 55);
@@ -179,6 +179,8 @@ html, body {
 		padding-bottom: 10px;
 	}
 
+// Proficiency Styles - Sliders
+
 	.facts-skills-wrapper {
 		width: 85%;
 	}
@@ -198,6 +200,10 @@ html, body {
 
 	.progress-fg, .progress-bg {
 		height: 2px;
+	}
+
+	.progress-bg {
+		background: $primary-dark;
 	}
 
 	/* MAIN PANEL AREA */
@@ -257,6 +263,18 @@ html, body {
 		border-left: 3px solid lighten($primary-color, 50);
 	}
 	
+
+// Professional Styles
+
+	.work-company {
+		font-weight: 500;
+		color: lighten($dark-grey, 20);
+	}
+
+
+
+// Built with Styles
+
 	.built-with a {margin: 0;}
 	.built-with a:first-of-type {
 	    	margin-right:0px;
@@ -268,71 +286,75 @@ html, body {
 
 	.timeline-graph { width: 100%; margin: 30px 0;}
 
-#forkongithub {
-	position:fixed;
-	display:block;
-	top:-30px;
-	right:0;
-	width:260px;
-	overflow:hidden;
-	height:260px;
-	z-index:9999;
-}
-#forkongithub a {
-	background: $primary-color;
-	color:#fff;
-	text-decoration:none;
-	text-align:center;
-	padding:5px 40px;
-	font-size:.825rem;
-	line-height:2rem;
-	position:relative;
-	transition:0.5s;
-	}
-#forkongithub a {
-	width:230px;
-	position:absolute;
-	top:60px;
-	right:-60px;
-	transform:rotate(45deg);
-	-webkit-transform:rotate(45deg);
-	-ms-transform:rotate(45deg);
-	-moz-transform:rotate(45deg);
-	-o-transform:rotate(45deg);
-	box-shadow:4px 4px 10px rgba(0,0,0,0.25);
-	}
+	
 
-#forkongithub a:hover {
-	background: $contrast-color;
-	color:#fff;
-}
-#forkongithub a::before,
-#forkongithub a::after {
-	content:"";
-	width:100%;
-	display:block;
-	position:absolute;
-	top:1px;
-	left:0;
-	height:1px;
-	background:#fff;
-	}
-#forkongithub a::after {
-	bottom:1px;
-	top:auto;
-	}
+// Fork me on Github Styles
 
-.floating-badge {
-	position: absolute; 
-	margin-left:-50px; 
-	top:3px; 
-	right:50px; 
-	color:white; 
-	font-size:.625em; 
-	background: rgba(0,0,0,.75);
-	padding: 0 10px 3px 3px;
-	line-height: 1em;
-}
+	#forkongithub {
+		position:fixed;
+		display:block;
+		top:-30px;
+		right:0;
+		width:260px;
+		overflow:hidden;
+		height:260px;
+		z-index:9999;
+	}
+	#forkongithub a {
+		background: $primary-color;
+		color:#fff;
+		text-decoration:none;
+		text-align:center;
+		padding:5px 40px;
+		font-size:.825rem;
+		line-height:2rem;
+		position:relative;
+		transition:0.5s;
+		}
+	#forkongithub a {
+		width:230px;
+		position:absolute;
+		top:60px;
+		right:-60px;
+		transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+		box-shadow:4px 4px 10px rgba(0,0,0,0.25);
+		}
+
+	#forkongithub a:hover {
+		background: $contrast-color;
+		color:#fff;
+	}
+	#forkongithub a::before,
+	#forkongithub a::after {
+		content:"";
+		width:100%;
+		display:block;
+		position:absolute;
+		top:1px;
+		left:0;
+		height:1px;
+		background:#fff;
+		}
+	#forkongithub a::after {
+		bottom:1px;
+		top:auto;
+		}
+
+	.floating-badge {
+		position: absolute; 
+		margin-left:-50px; 
+		top:3px; 
+		right:50px; 
+		color:white; 
+		font-size:.625em; 
+		background: rgba(0,0,0,.75);
+		padding: 0 10px 3px 3px;
+		line-height: 1em;
+	}
 
 
 
