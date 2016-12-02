@@ -17,7 +17,7 @@ var bowerFiles = require('main-bower-files');
 
 
 // JSON containing the content for jade templates
-var resumeData = require('./_src/templates/content/mpaiva.json')
+var resumeFile = './_src/templates/content/mpaiva.json'
 
 // get nodejs environment mod
 // command to set environment > NODE_ENV=production gulp
@@ -38,7 +38,7 @@ var jQueryDir      = 'bower_components/jquery/dist/'
 
 	// jade
 	gulp.task('jade', function() {
-
+var resumeData = JSON.parse(fs.readFileSync(resumeFile));
 		// name your supporting jade blocks and includes 
 		// with "_" to be ignored by the following expression:
 		// "_src/templates/**/!(_)*.jade" 
@@ -140,6 +140,7 @@ var jQueryDir      = 'bower_components/jquery/dist/'
 // Watch task
 gulp.task('watch', function() {
 	var server = livereload();
+	gulp.watch( '_src/templates/**/*.json', ['jade']);
  	gulp.watch( '_src/templates/**/*.jade', ['jade']);
  	gulp.watch( '_src/sass/**/*.scss', ['sass']);
  	gulp.watch( 'bower_components/**/*.*', ['bowerFiles']);
